@@ -111,16 +111,55 @@ h6,
     color: var(--primary);
 }
 
+@media (max-width: 2000px) {
+    .hero-header {
+        background: url(../img/extra-large-hero.jpg) top right no-repeat;
+        background-size: cover;
+    }
+    span {
+        color: #000000;
+    }
+}
+
+@media (max-width: 1000px) {
+   
+    #subheading {
+        color: #FFFFFF;
+    }
+    
+}
+
+
+
+@media (max-width: 900px) {
+    .hero-header {
+        background: url(../img/medium-hero.jpg) top right no-repeat;
+        background-size: auto;
+    }
+    #subheading {
+        color: #FFFFFF;
+    }
+    #heading {
+        color: #FFFFFF;
+    }
+}
+
+@media (max-width: 420px) {
+    .hero-header {
+        background: url(../img/small-hero.jpg) top right no-repeat;
+        background-size: cover;
+    }
+    
+    
+}
+
+
 @media (max-width: 991.98px) {
     .navbar-dark .navbar-nav .nav-link  {
         padding: 10px 0;
     }
 }
 
-.hero-header {
-    background: url(../img/hero.jpg) top right no-repeat;
-    background-size: cover;
-}
 
 .btn-play {
     position: relative;
