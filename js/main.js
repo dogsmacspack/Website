@@ -58,7 +58,7 @@
         }
     });
     $('.back-to-top').click(function () {
-        $('html, body').animate({scrollTop: 0}, 0, 'easeOut');
+        $('html, body').animate({scrollTop: 0}, 50, 'easeInOutExpo');
         return false;
     });
 
