@@ -1,6 +1,14 @@
 (function ($) {
     "use strict";
 
+
+    $(document).on('click','.navbar-toggle-s.in',function(e) {
+        if( $(e.target).is('a') ) {
+            $(this).collapse('hide');
+        }
+    });
+
+
     // Sticky Navbar
     $(window).scroll(function () {
         if ($(this).scrollTop() > 40) {
@@ -90,6 +98,9 @@
             }
         }
     });
+    
+
+
     
 })(jQuery);
 
