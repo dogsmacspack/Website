@@ -2,6 +2,11 @@
     "use strict";
 
 
+   $(document).on('click','.navbar-toggleable-xs.in',function(e) {
+    if( $(e.target).is('a') ) {
+        $(this).collapse('hide');
+    }
+});
 
 
     // Sticky Navbar
@@ -52,13 +57,13 @@
     // Back to top button
     $(window).scroll(function () {
         if ($(this).scrollTop() > 100) {
-            $('.back-to-top').fadeIn('fast');
+            $('.back-to-top').fadeIn('slow');
         } else {
-            $('.back-to-top').fadeOut('fast');
+            $('.back-to-top').fadeOut('slow');
         }
     });
     $('.back-to-top').click(function () {
-        $('html, body').animate({scrollTop: 0}, 50, 'easeInOutExpo');
+        $('html, body').animate({scrollTop: 0}, 100, 'easeInOutExpo');
         return false;
     });
 
